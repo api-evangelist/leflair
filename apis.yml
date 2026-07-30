@@ -1,19 +1,48 @@
 aid: leflair
 name: Leflair
-description: Leflair is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Leflair is a Vietnamese online retail brand selling discounted authentic
+  international brands across fashion and accessories, beauty and health, home and
+  lifestyle, and children''s products. Its own terms of service describe it as Vietnam''s
+  first members-only flash-sale platform, running daily promotional events on branded
+  goods. The live storefront at leflair.com is operated by Cong ty TNHH Sopa Technology
+  of Ho Chi Minh City on the Haravan commerce platform, and is supported by a Vietnamese-language
+  editorial blog, an account/sign-in surface, and published terms, privacy, payment-security,
+  shipping, and tax policy pages. Leflair is a consumer retail brand: as of this enrichment
+  pass it publishes no developer portal, public API, SDK, or machine-readable API
+  definition, and its historical leflair.vn domain no longer serves the storefront.
+  Surfaced in the API Evangelist network as a 500 Global portfolio company.'
 url: https://raw.githubusercontent.com/api-evangelist/leflair/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://file.hstatic.net/200000900543/file/logo_lf.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-surface: none
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- E-Commerce
+- Retail
+- Vietnam
+- Fashion
+- Beauty
+- Flash Sales
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +51,25 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://leflair.vn
+  url: https://leflair.com/
+- type: Blog
+  url: https://leflair.com/blogs/news
+- type: SignUp
+  url: https://leflair.com/account/register
+- type: Login
+  url: https://leflair.com/account/login
+- type: TermsOfService
+  url: https://leflair.com/pages/cac-dieu-khoan-su-dung
+- type: PrivacyPolicy
+  url: https://leflair.com/pages/bao-mat-rieng-tu
+- type: GitHubOrganization
+  url: https://github.com/leflair
+- type: DomainSecurity
+  url: security/leflair-domain-security.yml
+- type: LLMsTxt
+  url: llms/leflair-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
