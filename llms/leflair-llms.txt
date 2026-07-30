@@ -1,0 +1,39 @@
+# Leflair
+
+> Vietnamese online retail brand selling discounted authentic international brands across fashion, beauty, home and lifestyle, and children's products. Described in its own terms of service as Vietnam's first members-only flash-sale platform. The leflair.com storefront is operated by Cong ty TNHH Sopa Technology (Ho Chi Minh City) on the Haravan commerce platform. Leflair publishes no public API, developer portal, or SDK.
+
+## Storefront
+
+- [Leflair](https://leflair.com/): Main storefront — daily flash-sale events on branded goods.
+- [Blog](https://leflair.com/blogs/news): Vietnamese-language editorial content on fashion, beauty, and home goods.
+- [Sign up](https://leflair.com/account/register): Member account registration.
+- [Sign in](https://leflair.com/account/login): Member account sign-in.
+
+## Policies
+
+- [Terms of service](https://leflair.com/pages/cac-dieu-khoan-su-dung): Cac dieu khoan su dung.
+- [Privacy policy](https://leflair.com/pages/bao-mat-rieng-tu): Bao mat rieng tu.
+- [Payment security](https://leflair.com/pages/bao-mat-thanh-toan): Bao mat thanh toan.
+- [Shipping and delivery](https://leflair.com/pages/van-chuyen-giao-hang): Van chuyen giao hang.
+- [Tax policy](https://leflair.com/pages/chinh-sach-thue): Chinh sach thue.
+- [Order lookup](https://leflair.com/pages/kiem-tra-don-hang): Check an existing order.
+- [Brands](https://leflair.com/pages/thuong-hieu): Brand directory.
+
+## Contact
+
+- Business development: partner@leflair.com
+- Media and advertising: cham@leflair.com
+
+## Code
+
+- [GitHub organization](https://github.com/leflair): Legacy public repositories (styles, icons, leflairvn), last updated 2019. No client SDKs.
+
+## API surface
+
+Leflair has no public API. As of 2026-07-19 there is no developer portal, no OpenAPI or AsyncAPI definition, no published SDK or CLI, no MCP server, and no /.well-known/ discovery documents. The historical leflair.vn and api.leflair.vn hosts no longer serve the brand.
+
+## API Evangelist
+
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/leflair/refs/heads/main/apis.yml): Machine-readable index for this profile.
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/leflair/refs/heads/main/security/leflair-domain-security.yml): TLS, HSTS, DNSSEC, CAA, SPF, DMARC posture.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/leflair/refs/heads/main/well-known/leflair-well-known.yml): Verified-negative discovery probe.
