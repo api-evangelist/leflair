@@ -12,6 +12,17 @@ description: 'Leflair is a Vietnamese online retail brand selling discounted aut
   definition, and its historical leflair.vn domain no longer serves the storefront.
   Surfaced in the API Evangelist network as a 500 Global portfolio company.'
 url: https://raw.githubusercontent.com/api-evangelist/leflair/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
