@@ -2,20 +2,9 @@ generated: '2026-07-19'
 method: searched
 source: live probe of https://leflair.com/.well-known/*
 host: https://leflair.com
-note: No .well-known discovery documents are published. Every probed path returned
-  404. Recorded as a verified negative result; no WellKnown or SecurityTxt pointer
-  is wired in apis.yml because no document is present.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
+note: No .well-known discovery documents are published. Every probed path returned 404. Recorded as a
+  verified negative result; no WellKnown or SecurityTxt pointer is wired in apis.yml because no document
+  is present.
 related_probes:
 - path: /llms.txt
   status: 404
@@ -25,9 +14,27 @@ related_probes:
   status: 200
 retired_hosts:
 - host: https://leflair.vn
-  note: Historical brand domain. DNS resolves (Cloudflare NS, A 35.240.221.238) but
-    HTTPS serves an unrelated Kubernetes API server returning 403 forbidden with a
-    self-signed certificate; no Leflair storefront or API is served here.
+  note: Historical brand domain. DNS resolves (Cloudflare NS, A 35.240.221.238) but HTTPS serves an unrelated
+    Kubernetes API server returning 403 forbidden with a self-signed certificate; no Leflair storefront
+    or API is served here.
 - host: https://api.leflair.vn
-  note: DNS resolves to 35.189.167.68 but the host does not accept connections (TCP
-    timeout). No live API surface.
+  note: DNS resolves to 35.189.167.68 but the host does not accept connections (TCP timeout). No live
+    API surface.
+hosts:
+- host: https://leflair.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
