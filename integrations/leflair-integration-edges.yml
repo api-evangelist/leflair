@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/leflair/integrations
+- https://n8n.io/integrations/leflair/
+- https://composio.dev/toolkits/leflair
+- https://monid.ai/tools/leflair
+checked:
+- https://composio.dev/toolkits/leflair
+- https://monid.ai/tools/leflair
+- https://n8n.io/integrations/leflair/
+- https://zapier.com/apps/leflair/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
